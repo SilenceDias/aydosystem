@@ -1,3 +1,4 @@
+
 $(function () {
 
   var mixer = mixitup('.directions__list');
@@ -106,3 +107,4 @@ $(function () {
     $(this).next().slideToggle()
   })
 })
+

@@ -87,7 +87,7 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 .header__logo {
   margin-right: 60px;
@@ -166,7 +166,6 @@ html, body {
   max-width: 500px;
   margin-bottom: 60px;
 }
-.header__img {}
 
 .header__row {
   display: flex;
@@ -1143,16 +1142,11 @@ html, body {
     margin-bottom: 15px;
   }
 }
-
-/* ================================== 450 ================================ */
 @media (max-width: 450px) {
   .header__top {
     min-width: none;
     left: 0;
   }
-
-  /* ----------------------------------- */
-
   .header__title {
     max-width: none;
     font-size: 40px;
@@ -1160,8 +1154,8 @@ html, body {
   .directions__filter-box {
     margin-bottom: 15px;
   }
-  /* ----------------------------------- */
   .info__socials-item {
     margin-right: 15px;
   }
 }
+/* JS*/

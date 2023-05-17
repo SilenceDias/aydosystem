@@ -11,10 +11,7 @@
   <link rel="stylesheet" href="css/style.css">
   <title>Bookstore</title>
 </head>
-
 <body id="body">
-  <div class="wrapper">
-    <div class="overlay"></div>
     <header class="header">
       <a class="burger burger--follow" href="#">
         <span></span>
@@ -22,13 +19,12 @@
       <div class="header__top">
         <div class="container">
           <div class="header__top-inner">
-            <a class="header__logo text" href="#">
-              Bookstore
-            </a>
+            <p id="demo1" onclick="Function()">Bookstore</p>
             <nav class="header__nav">
               <ul class="header__nav-list">
                 <li class="header__nav-item">
-                  <a class="header__nav-link" href="#about">About Us</a>
+                  <a id ="header__nav-link" href="#about">About Us</a>
+                
                 </li>
                 <li class="header__nav-item">
                   <a class="header__nav-link" href="#directions">Catalog</a>
@@ -37,7 +33,7 @@
                   <a class="header__nav-link" href="Order.html">Order list</a>
                 </li>
                 <li class="header__nav-item">
-                  <a class="header__nav-link" href="#blog">New Books</a>
+                  <a class="header__nav-link" href="tetris.html">Tetris</a>
                 </li>
                 <li class="header__nav-item">
                   <a class="header__nav-link" href="#info">Contacts</a>
@@ -65,10 +61,10 @@
                   Bookstore
                 </h1>
                 <div class="header__content-text">
-                  <h>A room without a book like a body without soul</h>
+                  <div id="result">
+                  </div>
                 </div>
               </div>
-              <img class="header__img" src="/images/hero-image.svg" alt="">
             </div>
             <ul class="header__row">
               <li class="header__row-item">
@@ -102,15 +98,28 @@
             <div class="about__booksore">
               <div class="about__bookstore-content">
                 <div class="about__heading heading">
-                  <p class="heading__subtitle">About us</p>
+                  <p id="heading1" onmouseover="mouseOver()" onmouseout="mouseOut()">About us</p>
+                <script>
+  function mouseOver() {
+    document.getElementById("heading1").style.color = "red";
+  }
+  
+  function mouseOut() {
+    document.getElementById("heading1").style.color = "black";
+    
+  }
+                 </script>
                   <h2 class="heading__title">Online Bookstore</h2>
                 </div>
                 <div class="about__text">
                   <p class="about__paragraph about__paragraph--accent">
-                    This is project for assisment1
+                    This is project for web technologies
                   </p>
                   <p class="about__paragraph">
-                    We are passionate about books and our mission is to provide a wide selection of quality reading material for all ages and interests. Our dedicated team works hard to ensure that our customers have a seamless shopping experience and receive exceptional customer service. Thank you for choosing us as your go-to destination for all your reading needs.
+                    Fariza Nuralima did an aniamtion and sound effects of the web-site
+                    Alisher Sariyev did an event listeners and corrects some mistakes of the code
+                    Miras Amangeldin create an object JS nad used selectors
+                    Aidos Mukhambetaliev create a video game.
                   </p>
                 </div>
               </div>
@@ -128,7 +137,15 @@
         <div class="container">
           <div class="directions__inner">
             <div class="directions__heading heading heading--text-center">
-              <p class="heading__subtitle">Books</p>
+              <p  id  ="heading__subtitle">Books</p>
+              <script>
+                document.getElementById("heading__subtitle").onclick = function() {myFunction()};
+                
+                function myFunction() {
+                  document.getElementById("heading__subtitle").innerHTML = "SUPRISE!";
+                }
+                </script>
+                
               <h2 class="heading__title">Catalog</h2>
             </div>
             <div class="directions__body">
@@ -518,7 +535,17 @@ background is very welcoming and would appeal to anyone.
             </div>
             <div class="questions__content">
               <div class="questions__heading heading">
-                <p class="heading__subtitle">Any questions?</p>
+              
+                <h1 id="heading__subtitle1" onmouseover="mouseOver()" onmouseout="mouseOut()">Any questions? </h1>
+<script>
+  function mouseOver() {
+    document.getElementById("heading__subtitle1").style.color = "red";
+  }
+  
+  function mouseOut() {
+    document.getElementById("heading__subtitle1").style.color = "black";
+  }
+  </script>
                 <h2 class="heading__title">Drop us a line</h2>
               </div>
               <form class="questions__form">
@@ -636,5 +663,6 @@ background is very welcoming and would appeal to anyone.
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="js/mixitup.min.js"></script>
 <script src="js/main.js"></script>
-
+<script src="js/script.js"></script>
+<script src="js/eventlisteners.js"></script>
 </html>
